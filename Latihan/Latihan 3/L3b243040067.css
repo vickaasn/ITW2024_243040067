@@ -1,0 +1,29 @@
+body{
+    background-color: aqua;
+    font-family: Georgia;
+}
+h1{
+    font-family: 'comic sans ms';
+    font-size: 60px;
+    color:darkblue;
+    text-align: center;
+}
+h4{
+    text-align: right;
+}
+p{
+    text-align: center;
+}
+#hai{
+    color:orange
+}
+h3{
+    font-variant: small-caps;
+}
+#halo{
+    text-align: right;
+    line-height: 25px;
+}
+#hai2{
+    color:white;
+}
