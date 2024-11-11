@@ -1,0 +1,368 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* style */
+body{
+    font: 18px/28px arial, sans-serif;
+    background-color: rgb(201, 171, 201);
+    background-image: url(../image/web/bgpurple.jpg);
+    color: #000000;
+}
+
+
+.container {
+    width: 960px;
+    height: 50%;
+    margin: auto;
+    background-color: rgb(223, 189, 223);
+}
+
+.header {
+    width: 800px;
+    padding-bottom: 10px;
+    height: 170px;
+    padding: 3%;
+    padding-bottom: 10px;
+    
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(88, 19, 88);
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: plum;
+    color: white;
+}
+
+.hero {
+    height: 280px;
+    background-image: url(../image/web/Author\ @vineprilheksa.png);
+    background-size: cover;
+    background-position: 0 -30px;
+    border-bottom: 5px solid plum;
+    border-top: 5px solid plum;
+}
+
+.main {
+    width: 450px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    text-align: justify;
+}
+
+.main h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main .penulis {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.main .penulis a {
+    color: rgb(88, 19, 88);
+}
+
+.main p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.main img {
+    float: left;
+    padding-right: 20px;
+}
+
+/* sidebar */
+.sidebar {
+    width: 450px;
+    float: right;
+    padding: 20px;
+    margin-top: 60px;
+    text-align: justify;
+}
+
+.sidebar p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.sidebar img {
+    float: left;
+    padding-right: 20px;
+}
+
+.footer {
+    background-color: rgb(163, 128, 163);
+    padding: 20px;
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+
+.content .pena {
+    color: rgb(87, 67, 67);
+}
+
+.menu .baru {
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+.baru h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.baru .halo {
+    margin-top: 5px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 75px;
+    margin-bottom: 30px;
+    transform: translate(16%);
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid rgb(88, 19, 88);
+    text-align: center;
+}
+
+.table th {
+    background-color: rgb(88, 19, 88);
+    color: rgb(223, 189, 223);
+    font-weight: 400;
+}
+
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    /*overflow: hidden;*/
+    border: 5px solid rgb(88, 19, 88);
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.gallery li,
+.gallery li img,
+.gallery li span {
+    border-radius: 50%;
+}
+
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(88, 19, 88);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: rgb(201, 171, 201);
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: .3s;
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(88, 19, 88);
+    z-index: 9999;
+    transform: .8s;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgb(88, 19, 88);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgb(88, 19, 88);
+}
+
+.overlay:target img {
+    animation: fadeAjah 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    line-height: 14px;
+    padding: 5px;
+    opacity: 0;
+}
+
+.overlay:target .close{
+    animation: slideDownFade .5s .5s forwards;
+}
+
+.overlay:target .next
+.overlay:target .prev {
+    animation: fadeAjah .5s .5s forwards;
+}
+
+/* navigasi */
+.next, .prev {
+    width: 57px;
+    height: 93px;
+    background-image: url(../image/next.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../image/prev.png);
+    margin-left: -100px;
+}
+
+/* animasi */
+@keyframes fadeAjah {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
