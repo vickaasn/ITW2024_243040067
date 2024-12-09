@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">Ji Chang Wook</h2>
+                <p class="sub-heading">About Ji Chang Wook</p>
+            </div>
+            <div class="features feature-1">
+            <h4 class="price">Actor</h4>
+            <p class="item">In Korea</p>
+            </div>
+            <div class="features feature-2">
+            <h4 class="price">Model</h4>
+            <p class="item">International Model</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>Ji Chang Wook</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>Product</li>
+                <li><a href=""></a>About</li>
+                <li><a href=""></a>Gallery</li>
+
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <img src="../Latihan 7/img/7.jpg">
+                <h3>The K2</h3>
+                <p>kehidupan seorang mantan tentara bayaran bernama Kim Je Ha (Ji Chang Wook) berjuluk K2. Kim Je Ha menjadi buronan usai kekasihnya dibunuh Park Kwan Soo (Kim Kap Soo).</p>
+            </div>
+            <div class="service">
+                <img src="../Latihan 7/img/8.jpg">
+                <h3>The Worst Of Evil</h3>
+                <p>Kisah berlatar di Seoul pada 1990-an, Jung Gi-cheul (Wi Ha-jun) seorang mantan DJ mengambil alih pimpinan sebuah geng dan mulai mengedarkan obat terlarang baru yang populer, Gangnam Crystal, di klub-klub malam hingga ke China dan Jepang.</p>
+            </div>
+            <div class="service">
+                <img src="../Latihan 7/img/9.jpg">
+                <h3>Healer</h3>
+                <p> Healer menceritakan tiga orang dengan bakat berbeda dalam satu kelompok. Kelompok ini berusaha memecahkan kasus penyiaran ilegal satu dekade silam.</p>
+            </div>
+            <div class="service">
+                <img src="../Latihan 7/img/10.jpg">
+                <h3>Revolver</h3>
+                <p>Film Revolver menceritakan tentang seorang mantan petugas polisi yang membalas dendam setelah ditipu oleh seseorang dalam kasus korupsi</p>
+            </div>
+        </section>
+
+        <selection class="gallery">
+            <h2>Gallery</h2>
+            <img src="../Latihan 7/img/11.png">
+            <img src="../Latihan 7/img/2.png">
+            <img src="../Latihan 7/img/3.png">
+            <img src="../Latihan 7/img/4.png">
+            <img src="../Latihan 7/img/5.png">
+            <img src="../Latihan 7/img/6.png">
+            <img src="../Latihan 7/img/7.png">
+            <img src="../Latihan 7/img/8.png">
+            <img src="../Latihan 7/img/9.png">
+            <img src="../Latihan 7/img/10.png">
+            <img src="../Latihan 7/img/12.png">
+            <img src="../Latihan 7/img/14.png">
+        </selection>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+</html>
